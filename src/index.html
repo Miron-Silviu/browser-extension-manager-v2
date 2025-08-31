@@ -5,8 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body>
-    <h1 class="text-3xl bg-blue-500">Hello world!</h1>
-    <h2 class="bg-neutral-100 font-noto fon">Test</h2>
+  <body class="bg-neutral-200">
+    <div class="title-container flex bg-neutral-50 m-4 justify-between">
+      <div class="main-logo m-2">
+        <img src="../assets/images/logo.svg" alt="main-logo" />
+      </div>
+      <div class="align-bottom m-3">
+        <button type="button" class="bg-neutral-100 p-1.5 rounded-md">
+          <img src="../assets/images/icon-moon.svg" alt="switch-button" />
+        </button>
+      </div>
+    </div>
+    <div class="title text-center m-4 font-noto">
+      <h1 class="font-black text-3xl">Extensions List</h1>
+    </div>
+    <div class="action-buttons mx-4 flex justify-evenly">
+      <button
+        type="button"
+        class="bg-neutral-50 py-1 font-noto text-sm px-4 active-red-700 rounded-2xl">
+        All
+      </button>
+      <button
+        type="button"
+        class="bg-neutral-50 font-noto text-sm py-1 px-4 active-red-700 rounded-2xl">
+        Active
+      </button>
+      <button
+        type="button"
+        class="bg-neutral-50 py-1 font-noto text-sm px-4 active-red-700 rounded-2xl">
+        Inactive
+      </button>
+    </div>
+    <div class="dev-lens-extension m-4 bg-neutral-100 rounded-lg">
+      <div class="flex tool-info">
+        <img
+          src="../assets/images/logo-devlens.svg"
+          class="w-10 m-1 mt-0"
+          alt="dev-lens" />
+        <div>
+          <h2 class="font-bold mb-0 ml-1 mt-1">DevLens</h2>
+          <p class="text-xs mr-10 ml-1 tex-left">
+            Quickly inspect page layouts and visiualize element bondaries
+          </p>
+        </div>
+      </div>
+      <div class="action-buttons">
+        <button class="remove-button">Remove</button>
+      </div>
+    </div>
   </body>
 </html>
