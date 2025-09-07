@@ -5,384 +5,404 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="bg-neutral-200">
-    <div class="title-container flex bg-neutral-50 m-4 justify-between">
-      <div class="main-logo m-2">
-        <img src="../assets/images/logo.svg" alt="main-logo" />
-      </div>
-      <div class="align-bottom m-3">
-        <button type="button" class="bg-neutral-100 p-1.5 rounded-md">
-          <img src="../assets/images/icon-moon.svg" alt="switch-button" />
-        </button>
-      </div>
-    </div>
-    <div class="title text-center m-4 font-noto">
-      <h1 class="font-black text-3xl">Extensions List</h1>
-    </div>
-    <div class="action-buttons mx-4 flex justify-evenly">
-      <button
-        type="button"
-        class="bg-neutral-50 py-1 font-noto text-sm px-4 active-red-700 rounded-2xl">
-        All
-      </button>
-      <button
-        type="button"
-        class="bg-neutral-50 font-noto text-sm py-1 px-4 active-red-700 rounded-2xl">
-        Active
-      </button>
-      <button
-        type="button"
-        class="bg-neutral-50 py-1 font-noto text-sm px-4 active-red-700 rounded-2xl">
-        Inactive
-      </button>
-    </div>
-    <div class="dev-lens-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-devlens.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">DevLens</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Quickly inspect page layouts and visiualize element bondaries.
-          </p>
+  <body class="bg-neutral-200 dark:bg-dark-gradient">
+    <div
+      class="md:main-constainer md:m-60 md:w-4/6 justify-center flex flex-col">
+      <div class="title-container flex bg-neutral-50 justify-between">
+        <div class="main-logo m-2">
+          <img src="../assets/images/logo.svg" alt="main-logo" />
+        </div>
+        <div class="align-bottom m-3 flex">
+          <button type="button" class="bg-neutral-100 p-1.5 rounded-md">
+            <img src="../assets/images/icon-moon.svg" alt="switch-button" />
+            <img src="../assets/images/icon-sun.svg" alt="sun" class="hidden" />
+          </button>
         </div>
       </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
-          </div>
-        </label>
-      </div>
-    </div>
-    <div class="style-spy-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-style-spy.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">StyleSpy</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Instantly analyse and copy CSS fro any webpage elememt
-          </p>
+      <div class="md:flex justify-between">
+        <div class="title text-center m-4 font-noto">
+          <h1 class="font-black text-3xl">Extensions List</h1>
+        </div>
+        <div class="action-buttons mx-4 flex justify-evenly md:h-8 mt-5 gap-2">
+          <button
+            type="button"
+            class="bg-neutral-50 py-1 font-noto text-sm px-4 active-red-700 rounded-2xl cursor-pointer">
+            All
+          </button>
+          <button
+            type="button"
+            class="bg-neutral-50 font-noto text-sm py-1 px-4 active-red-700 rounded-2xl cursor-pointer">
+            Active
+          </button>
+          <button
+            type="button"
+            class="bg-neutral-50 py-1 font-noto text-sm px-4 active-red-700 rounded-2xl cursor-pointer">
+            Inactive
+          </button>
         </div>
       </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+      <div class="grid-container md:flex flex-wrap justify-center">
+        <div
+          class="dev-lens-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-devlens.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">DevLens</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Quickly inspect page layouts and visiualize element bondaries.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="speed-boost-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-speed-boost.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">SpeedBoost</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Optimize browser resourse usage to accelarate page loading.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="style-spy-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-style-spy.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">StyleSpy</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Instantly analyse and copy CSS fro any webpage elememt
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="jason-wizard-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-json-wizard.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">JASONWizard</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Quickly inspect page layouts and visiualize element bondaries
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="speed-boost-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-speed-boost.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">SpeedBoost</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Optimize browser resourse usage to accelarate page loading.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="tab-master-pro-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-tab-master-pro.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">TabMaster Pro</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Organises browser tabs into groups sessions.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="jason-wizard-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-json-wizard.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">JASONWizard</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Quickly inspect page layouts and visiualize element bondaries
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="view-port-buddy-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-viewport-buddy.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">ViewportBuddy</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Simulate various screen resolutions directly within the browser.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="tab-master-pro-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-tab-master-pro.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">TabMaster Pro</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Organises browser tabs into groups sessions.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="markup-notes-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-markup-notes.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">Markup Notes</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Enables annotation and nothes directly onto webpages for
-            collabortive debugging.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="view-port-buddy-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-viewport-buddy.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">ViewportBuddy</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Simulate various screen resolutions directly within the browser.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="grid-guides-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-grid-guides.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">GridGuides</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Organise browser tabs into grups sessions.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="markup-notes-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-markup-notes.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">Markup Notes</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Enables annotation and nothes directly onto webpages for
+                collabortive debugging.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="pallet-picker-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-palette-picker.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">Palette Picker</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Instantly extracts color palettes from any webpage.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="grid-guides-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-grid-guides.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">GridGuides</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Organise browser tabs into grups sessions.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="link-checker-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-link-checker.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">LinkCheker</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Scan and highlights broken links on any page.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="pallet-picker-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-palette-picker.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">Palette Picker</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Instantly extracts color palettes from any webpage.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="dom-snaphsot-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-dom-snapshot.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">DOM Snapshot</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Captuer and export DOM structures quickly.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="link-checker-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-link-checker.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">LinkCheker</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Scan and highlights broken links on any page.
+              </p>
+            </div>
           </div>
-        </label>
-      </div>
-    </div>
-    <div class="console-plus-extension m-4 bg-neutral-0 rounded-lg pb-2">
-      <div class="flex tool-info mb-1">
-        <img
-          src="../assets/images/logo-console-plus.svg"
-          class="w-10 m-1 mt-0"
-          alt="dev-lens" />
-        <div>
-          <h2 class="font-bold mb-0 ml-1 mt-1">ConsolePlus</h2>
-          <p
-            class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
-            Enhanced developer console with advanced filering and.
-          </p>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
         </div>
-      </div>
-      <div class="action-buttons m-2 flex justify-between">
-        <button
-          class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
-          Remove
-        </button>
-        <label class="inline-flex items-center cursor-pointer mt-4">
-          <input type="checkbox" class="sr-only peer" />
-          <div
-            class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
-            <span
-              class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+        <div
+          class="dom-snaphsot-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-dom-snapshot.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">DOM Snapshot</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Captuer and export DOM structures quickly.
+              </p>
+            </div>
           </div>
-        </label>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
+        </div>
+        <div
+          class="console-plus-extension m-4 bg-neutral-0 rounded-lg pb-2 md:w-70">
+          <div class="flex tool-info mb-1">
+            <img
+              src="../assets/images/logo-console-plus.svg"
+              class="w-10 m-1 mt-0"
+              alt="dev-lens" />
+            <div>
+              <h2 class="font-bold mb-0 ml-1 mt-1">ConsolePlus</h2>
+              <p
+                class="text-xs mr-10 ml-1 tex-left text-neutral-600 font-[400] font-noto">
+                Enhanced developer console with advanced filering and.
+              </p>
+            </div>
+          </div>
+          <div class="action-buttons m-2 flex justify-between">
+            <button
+              class="remove-button rounded-2xl p-1 px-2 mt-2 bg-neutral-0 text-xs cursor-pointer border-[0.2px] border-neutral-300 font-noto font-[500]">
+              Remove
+            </button>
+            <label class="inline-flex items-center cursor-pointer mt-4">
+              <input type="checkbox" class="sr-only peer" />
+              <div
+                class="w-7 h-4 bg-neutral-300 rounded-full peer peer-checked:bg-red-700 peer-focus:ring-2 peer-focus:ring-red-700 relative transition-colors">
+                <span
+                  class="absolute left-0.5 top-0.5 w-3 h-3 bg-white rounded-full transition-transform peer-checked:translate-x-5"></span>
+              </div>
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   </body>
